@@ -1,0 +1,194 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "eduhal",
+      "password": "hej"
+    }
+  ],
+  "quotes": [
+    {
+      "id": 1,
+      "text": "test Test text",
+      "author": "Eduard von hederholm",
+      "year": "2014",
+      "createdby": "Eduard Hallberg"
+    },
+    {
+      "text": "Testing my quote here, will it work?",
+      "author": "Eduard",
+      "year": 1863,
+      "id": 2
+    },
+    {
+      "text": "Lol",
+      "author": "hej",
+      "year": 1817,
+      "id": 3
+    },
+    {
+      "text": "added new quote",
+      "author": "Hejsan",
+      "year": 1817,
+      "id": 4
+    },
+    {
+      "text": "test",
+      "author": "test",
+      "year": 1822,
+      "id": 5
+    },
+    {
+      "text": "Testing quote",
+      "author": "Magnus karlsson",
+      "year": 1819,
+      "id": 6
+    },
+    {
+      "text": "eeee",
+      "author": "eee",
+      "year": 1818,
+      "id": 7
+    },
+    {
+      "text": "eee",
+      "author": "eeee",
+      "year": 1818,
+      "id": 8
+    },
+    {
+      "text": "eee",
+      "author": "eee",
+      "year": 1817,
+      "id": 9
+    },
+    {
+      "text": "eee",
+      "author": "ee",
+      "year": 1815,
+      "id": 10
+    },
+    {
+      "text": "eee",
+      "author": "eeee",
+      "year": 1820,
+      "id": 11
+    },
+    {
+      "text": "eeerr",
+      "author": "eeeerr",
+      "year": 1828,
+      "id": 12
+    },
+    {
+      "text": "rrr",
+      "author": "rrr",
+      "year": 1822,
+      "id": 13
+    },
+    {
+      "text": "ee",
+      "author": "eee",
+      "year": 1819,
+      "id": 14
+    },
+    {
+      "text": "ee",
+      "author": "ee",
+      "year": 1818,
+      "userid": 1,
+      "id": 15
+    },
+    {
+      "text": "test",
+      "author": "hello",
+      "year": 1819,
+      "id": 16
+    }
+  ],
+  "login": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "username": "eduhal",
+      "password": "hej",
+      "id": 9
+    },
+    {
+      "username": "eduhal",
+      "password": "hej",
+      "id": 10
+    },
+    {
+      "username": "eduhal",
+      "password": "hej",
+      "id": 11
+    },
+    {
+      "username": "eduhal",
+      "password": "hej",
+      "id": 12
+    },
+    {
+      "username": "eduhal",
+      "password": "hej",
+      "id": 13
+    },
+    {
+      "username": "eduhal",
+      "password": "hej",
+      "id": 14
+    },
+    {
+      "username": "eduhal",
+      "password": "hej",
+      "id": 15
+    },
+    {
+      "username": "eduhal",
+      "password": "hej",
+      "id": 16
+    },
+    {
+      "username": "eduhal",
+      "password": "hej",
+      "id": 17
+    }
+  ]
+}

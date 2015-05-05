@@ -1,0 +1,75 @@
+<div class="row">
+	<div class="col-sm-4">
+	</div>
+	<div class="col-sm-4">
+		<form class="form-signin" name="createQuote" novalidate>
+			<h2 class="form-signin-heading" style="text-align: center;">Create quote</h2>
+			<label for="inputText" class="sr-only">Text</label>
+			<input type="text" name="inputText" class="form-control" placeholder="Text" ng-class="{highlight:!createQuote.inputText.$valid && activateHighlight}" required="" autofocus="" style="margin-bottom:5px;" ng-model="quote.text">
+			<label for="inputAuthor" class="sr-only">Author</label>
+			<input type="text" name="inputAuthor" class="form-control" placeholder="Author" ng-class="{highlight:!createQuote.inputAuthor.$valid && activateHighlight}" required="" style="margin-bottom:5px;" ng-model="quote.author">
+			<label for="selectYear" class="sr-only">Year</label>
+			<select class="form-control" name="selectYear" ng-class="{highlight:!createQuote.selectYear.$valid && activateHighlight}" ng-options="year for year in years" ng-model="quote.year" required="">
+				<option value="">Select year</option>
+			</select>
+		</br>
+		<button class="btn btn-lg btn-primary btn-block" ng-click="saveQuote()">Create quote</button>
+	</form>
+</div>
+<div class="col-sm-4">
+</div>
+</div>
+<div class="row" style="margin-top:15px" ng-if="!showOne">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="striped-rows-odd">
+			<div ng-click="gap.show = !gap.show" class="row pointer" ng-repeat="quote in quotes">
+				<label class="pointer bold">Quote: <span class="no-bold">{{quote.text}}</span></label>
+				<table class="table table-striped table-condensed table-hover" ng-if="gap.show">
+					<thead>
+						<tr>
+							<th>Text</th>
+							<th>Author</th>
+							<th>Year</th>
+							<th>Created by</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a ng-href="#/quotes?id={{quote.id}}" ng-click="openQuote(quote)">{{quote.text}}</a></td>
+							<td>{{quote.author}}</td>
+							<td>{{quote.year}}</td>
+							<td>{{quote.createdBy}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+<div class="row" ng-if="showOne" style="margin-top: 15px;">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+			<table class="table table-striped table-condensed table-hover">
+					<thead>
+						<tr>
+							<th>Text</th>
+							<th>Author</th>
+							<th>Year</th>
+							<th>Created by</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>{{quote.text}}</a></td>
+							<td>{{quote.author}}</td>
+							<td>{{quote.year}}</td>
+							<td>{{quote.createdby}}</td>
+						</tr>
+					</tbody>
+				</table>
+	</div>
+	<div class="col-sm-3"></div>
+</div>

@@ -1,0 +1,27 @@
+.striped-rows .row {
+    line-height: 26px;
+    font-size: 14px;
+    border-bottom: 1px solid whitesmoke;
+}
+.striped-rows .row:first-of-type {
+    background-color: #efefef;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 0;
+}
+.striped-rows-odd .row:nth-child(odd) {
+    background-color: #efefef;
+}
+.striped-rows-odd {
+    line-height: 30px
+}
+.striped-rows-odd label {
+    margin-bottom: 0px;
+    font-weight: normal;
+}
+.striped-rows-margin {
+    margin-bottom: 30px
+}
+.highlight { 
+    border: 2px red solid;
+}
